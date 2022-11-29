@@ -41,7 +41,7 @@ const Home = () => {
             <h1>Tweet de Montaigne</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Give Michel de Montaigne a topic and he will write you a tweet! The simpler the better.</h2>
+            <h2>Hey Michel de Montaigne, what are your thoughts on ...</h2>
           </div>
         </div>
         <div className="prompt-container">
