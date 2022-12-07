@@ -36,7 +36,7 @@ const generateAction = async (req, res) => {
   console.log(`API: ${basePromptPrefix}${req.body.userInput}?${basePromptSuffix}`)
 
   const baseCompletion = await openai.createCompletion({
-    model: 'text-davinci-002',
+    model: 'text-davinci-003',
     prompt: `${basePromptPrefix}${req.body.userInput}?${basePromptSuffix}`,
     temperature: 0.78,
     max_tokens: 213,
@@ -62,7 +62,7 @@ const generateAction = async (req, res) => {
   Tweet:  
   `
   const secondPromptCompletion = await openai.createCompletion({
-    model: 'text-davinci-002',
+    model: 'text-davinci-003',
     prompt: `${secondPrompt}`,
     temperature: 0.7,
     max_tokens: 240,
