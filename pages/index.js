@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/buildspace-logo.png';
+import michelImage from '../assets/Montaigne_Tweet_Icon.png'
 import { useState } from 'react';
 
 const Home = () => {
@@ -22,7 +23,6 @@ const Home = () => {
 
     const data = await response.json();
     const { output } = data;
-    console.log("OpenAI replied...", output.text)
 
     setApiOutput(`${output.text}`);
     setIsGenerating(false);
@@ -40,8 +40,12 @@ const Home = () => {
           <div className="header-title">
             <h1>Tweets de Montaigne</h1>
           </div>
+          <div>
+            <Image src={michelImage} alt='image of michel de montaigne'/>
+          </div>
           <div className="header-subtitle">
-            <h2>Hey Michel de Montaigne, what are your thoughts on ...</h2>
+            <h2>Have Michel de Montaigne write you a tweet.</h2>
+            <p>Hi Michel, what are your thoughts on ...</p>
           </div>
         </div>
         <div className="prompt-container">
@@ -72,7 +76,7 @@ const Home = () => {
             )}
         </div>
       </div>
-      <div className="badge-container grow">
+      {/* <div className="badge-container grow">
         <a
           href="https://buildspace.so/builds/ai-writer"
           target="_blank"
@@ -83,7 +87,7 @@ const Home = () => {
             <p>build with buildspace</p>
           </div>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

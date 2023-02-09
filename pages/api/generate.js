@@ -43,7 +43,6 @@ const generateAction = async (req, res) => {
   });
   
   const basePromptOutput = baseCompletion.data.choices.pop();
-  console.log("base output", basePromptOutput.text)
 
   const secondPrompt = 
   `
