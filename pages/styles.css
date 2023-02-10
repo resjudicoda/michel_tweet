@@ -180,6 +180,7 @@ textarea {
     place-content: flex-start;
     align-items: flex-start;
     background-color: #35312e;
+    color: rgba(255, 255, 255, 0.75);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -311,7 +312,7 @@ textarea {
     letter-spacing: 0px;
     line-height: 1.4em;
     text-align: start;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
     text-transform: none;
     margin: 0;
@@ -330,7 +331,7 @@ textarea {
 .output-content p {
     text-align: center;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
